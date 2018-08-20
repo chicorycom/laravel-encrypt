@@ -4,11 +4,13 @@
 > Votre Intégrateur Reseau Système et Sécurité.
 
 
-[![GitHub issues](https://img.shields.io/github/issues/chicorycom/laravel-encrypte.svg?style=popout-square)](https://github.com/chicorycom/laravel-encrypte/issues)
-[![GitHub forks](https://img.shields.io/github/forks/chicorycom/laravel-encrypte.svg?style=popout-square)](https://github.com/chicorycom/laravel-encrypte/network)
-[![GitHub stars](https://img.shields.io/github/stars/chicorycom/laravel-encrypte.svg?style=popout-square)](https://github.com/chicorycom/laravel-encrypte/stargazers)
-[![GitHub license](https://img.shields.io/github/license/chicorycom/laravel-encrypte.svg?style=popout-square)](https://github.com/chicorycom/laravel-encrypte)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/chicorycom/laravel-encrypte/tree/v0.1.2.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fchicorycom%2Flaravel-encrypte%2Ftree%2Fv0.1.2)
+
+[![GitHub issues](https://img.shields.io/github/issues/chicorycom/laravel-encrypt.svg?style=popout-square)](https://github.com/chicorycom/laravel-encrypt/issues)
+[![GitHub forks](https://img.shields.io/github/forks/chicorycom/laravel-encrypt.svg?style=popout-square)](https://github.com/chicorycom/laravel-encrypt/network)
+[![GitHub stars](https://img.shields.io/github/stars/chicorycom/laravel-encrypt.svg?style=popout-square)](https://github.com/chicorycom/laravel-encrypt/stargazers)
+[![GitHub license](https://img.shields.io/github/license/chicorycom/laravel-encrypt.svg?style=popout-square)](https://github.com/chicorycom/laravel-encrypt)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/chicorycom/laravel-encrypt.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fchicorycom%2Flaravel-encrypt)
+
 
 ![](header.png)
 
@@ -23,7 +25,7 @@ composer require chicorycom/laravel-encrypt
 
 ## Usage example
 ```php
-php artisan vendor:publish --provider="vendor\chicorycom\laravel-encrypte\EcryptServiceProvider" --tag="config"
+php artisan vendor:publish --provider="vendor\chicorycom\laravel-encrypt\EcryptServiceProvider" --tag="config"
 .env CH_ENCRYPT=YOUR-KEY
 
 $en = new Encryption();
