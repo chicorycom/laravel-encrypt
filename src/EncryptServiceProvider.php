@@ -12,17 +12,13 @@ class EncryptServiceProvider extends ServiceProvider
     /**
      * @return :void
      */
-    public function boot():void
+    public function boot()
     {
         $source = realpath($raw = __DIR__.'/../config/chencrypt.php') ?: $raw;
         $this->mergeConfigFrom(
             $source, 'chencrypt'
         );
-
         $this->publishes([$source => config_path('chencrypt.php')]);
-
-        $config = $this->app['config']['chencrypt'];
-        $this->app->bind(Encryption::class, $config['encrypt']);
     }
 
 
@@ -32,8 +28,10 @@ class EncryptServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register():void
+    public function register()
     {
-
+        $this->app->singleton(Encryption::class, function ($app) {
+            return new Encryption();
+        });
     }
 }
